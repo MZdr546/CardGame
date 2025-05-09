@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1360757888727274766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1979489157436099291}
+  - component: {fileID: 2325113189658659075}
+  m_Layer: 0
+  m_Name: CardDeck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1979489157436099291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360757888727274766}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7143325, y: 1.4316053, z: -2.3173337}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2325113189658659075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360757888727274766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048a6df8a0ffe134f85c129420806cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cards:
+  - Name: 1
+    Image: {fileID: 0}
+  - Name: 2
+    Image: {fileID: 0}
+  - Name: 3
+    Image: {fileID: 0}
+  - Name: 4
+    Image: {fileID: 0}
+  - Name: 5
+    Image: {fileID: 0}
+  - Name: 6
+    Image: {fileID: 0}
+  - Name: 7
+    Image: {fileID: 0}
+  - Name: 8
+    Image: {fileID: 0}
+  - Name: 9
+    Image: {fileID: 0}
+  - Name: 10
+    Image: {fileID: 0}
+  - Name: 11
+    Image: {fileID: 0}
+  - Name: 12
+    Image: {fileID: 0}
+  - Name: 13
+    Image: {fileID: 0}
+  - Name: 14
+    Image: {fileID: 0}
+  - Name: 15
+    Image: {fileID: 0}
+  - Name: 16
+    Image: {fileID: 0}
+  - Name: 17
+    Image: {fileID: 0}
+  - Name: 18
+    Image: {fileID: 0}
+  - Name: 19
+    Image: {fileID: 0}
+  - Name: 20
+    Image: {fileID: 0}
+  - Name: 21
+    Image: {fileID: 0}
+  - Name: 22
+    Image: {fileID: 0}
+  - Name: 23
+    Image: {fileID: 0}
+  - Name: 24
+    Image: {fileID: 0}
+  - Name: 25
+    Image: {fileID: 0}
+  - Name: 26
+    Image: {fileID: 0}
+  - Name: 27
+    Image: {fileID: 0}
+  - Name: 28
+    Image: {fileID: 0}
+  - Name: 29
+    Image: {fileID: 0}
+  - Name: 30
+    Image: {fileID: 0}
+  - Name: 31
+    Image: {fileID: 0}
+  - Name: 32
+    Image: {fileID: 0}
+  - Name: 33
+    Image: {fileID: 0}
+  - Name: 34
+    Image: {fileID: 0}
+  - Name: 35
+    Image: {fileID: 0}
+  - Name: 36
+    Image: {fileID: 0}
+  - Name: 37
+    Image: {fileID: 0}
+  - Name: 38
+    Image: {fileID: 0}
+  - Name: 39
+    Image: {fileID: 0}
+  - Name: 40
+    Image: {fileID: 0}
+  - Name: 41
+    Image: {fileID: 0}
+  - Name: 42
+    Image: {fileID: 0}
+  - Name: 43
+    Image: {fileID: 0}
+  - Name: 44
+    Image: {fileID: 0}
+  - Name: 45
+    Image: {fileID: 0}
+  - Name: 46
+    Image: {fileID: 0}
+  - Name: 47
+    Image: {fileID: 0}
+  - Name: 48
+    Image: {fileID: 0}
+  - Name: 49
+    Image: {fileID: 0}
+  - Name: 50
+    Image: {fileID: 0}
