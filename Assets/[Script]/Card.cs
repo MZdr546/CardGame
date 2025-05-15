@@ -10,6 +10,8 @@ public class Card : MonoBehaviour
     public LayoutElement layoutElement;
     public Collider Collider;
 
+    public GameObject Buttons;
+
     private void OnMouseEnter()
     {
         Debug.Log("OnMouseEnter");
@@ -17,9 +19,35 @@ public class Card : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (GlobalInformation.CardChoosen != null)
+        {
+            GlobalInformation.CardChoosen.layoutElement.ignoreLayout = false;
+            GlobalInformation.CardChoosen.Collider.enabled = true;
+            GlobalInformation.CardChoosen.transform.localPosition = new Vector3(0f, 0f, 0f);
+            GlobalInformation.CardChoosen.transform.localScale = new Vector3(1f, 1f, 1f);
+            GlobalInformation.CardChoosen.Buttons.SetActive(false);
+        }
         GlobalInformation.CardChoosen = this;
         layoutElement.ignoreLayout = true;
-        transform.position += transform.up * 1f;
+        transform.localPosition = new Vector3(0, 3f, 0f);
+        new Vector3(1f, 1f, 2f);
+        transform.localScale = new Vector3(2f, 2f, 2f);
         Collider.enabled = false;
+        Buttons.SetActive(true);
     }
+
+    public void BackButttonAction()
+    {
+        layoutElement.ignoreLayout = false;
+        Collider.enabled = true;
+        transform.localPosition = new Vector3(0f, 0f, 0f);
+        transform.localScale = new Vector3(1f, 1f, 1f);
+        Buttons.SetActive(false);
+        GlobalInformation.CardChoosen = null;
+    }
+    public void PlayButttonAction()
+    {
+
+    }
+
 }
