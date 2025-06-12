@@ -6,15 +6,15 @@ public class GetCard : MonoBehaviour
 {
     public Canvas cards;
 
-    public Deck cardDeck;
+    public DeckCardScriptableObject cardDeck;
     public GameObject card;
 
     [Header("Lists")]
 
     [SerializeField]
-    List<CardVariant> cardVariants = new List<CardVariant>();
+    List<CardScriptable> cardVariants = new List<CardScriptable>();
     [SerializeField]
-    List<CardVariant> deck = new List<CardVariant>();
+    List<CardScriptable> deck = new List<CardScriptable>();
 
     bool isInList = false;
 
@@ -31,7 +31,7 @@ public class GetCard : MonoBehaviour
             GameObject pop = Instantiate(card, cards.transform);
 
 
-            pop.GetComponent<Card>().text.text = cardDeck.Cards[GetRandomCard()].Name;
+            pop.GetComponent<Card>().text.text = cardDeck.DeckCards[GetRandomCard()].Card.Name;
 
             //pop.GetComponent<Card>().text.text = cardDeck.Cards[i].Name;
             //cardDeck.Cards[Random.RandomRange(0, cardDeck.Cards.Count)]
@@ -41,11 +41,9 @@ public class GetCard : MonoBehaviour
 
     public int GetRandomCard()
     {
-        
-
         while (true)
         {
-            int o = Random.RandomRange(0, cardDeck.Cards.Count);
+            int o = Random.RandomRange(0, cardDeck.DeckCards.Count);
 
             if (cardVariants.Count != 0)
             {
@@ -73,9 +71,13 @@ public class GetCard : MonoBehaviour
 
             if (!isInList)
             {
-                CardVariant cardVariant = new CardVariant();
+                
+                CardScriptable cardVariant = new CardScriptable();
                 cardVariant.Name = o.ToString();
-
+                CardDeck cardDeck = new CardDeck();
+                cardDeck.ID = o.ToString();
+                cardDeck.Card = cardVariant;
+                
                 cardVariants.Add(cardVariant);
                 deck.Add(cardVariant);
 

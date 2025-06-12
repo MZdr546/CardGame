@@ -62,10 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\[Script]\CanvasHandCard.cs" />
     <Compile Include="Assets\[Script]\GetCard.cs" />
+    <Compile Include="Assets\[Script]\CardScriptable.cs" />
     <Compile Include="Assets\[Script]\Card.cs" />
     <Compile Include="Assets\[Script]\CardPlace.cs" />
+    <Compile Include="Assets\[Script]\DeckCardScriptableObject.cs" />
     <Compile Include="Assets\[Script]\GlobalInformation.cs" />
-    <Compile Include="Assets\[Script]\Deck.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

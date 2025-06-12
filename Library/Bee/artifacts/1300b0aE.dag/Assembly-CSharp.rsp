@@ -388,7 +388,8 @@
 "Assets/[Script]/CanvasHandCard.cs"
 "Assets/[Script]/Card.cs"
 "Assets/[Script]/CardPlace.cs"
-"Assets/[Script]/Deck.cs"
+"Assets/[Script]/CardScriptable.cs"
+"Assets/[Script]/DeckCardScriptableObject.cs"
 "Assets/[Script]/GetCard.cs"
 "Assets/[Script]/GlobalInformation.cs"
 -langversion:9.0

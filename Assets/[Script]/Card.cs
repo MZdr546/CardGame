@@ -30,7 +30,8 @@ public class Card : MonoBehaviour
         {
             GlobalInformation.CardChoosen.layoutElement.ignoreLayout = false;
             GlobalInformation.CardChoosen.Collider.enabled = true;
-            GlobalInformation.CardChoosen.transform.localPosition = new Vector3(0f, 0f, -0.08f);
+            GlobalInformation.CardChoosen.CardElement.transform.localPosition = new Vector3(0f, 0f, 0f);
+            GlobalInformation.CardChoosen.transform.localPosition = new Vector3(0f, 0f, -0.09f);
             GlobalInformation.CardChoosen.transform.localScale = new Vector3(1f, 1f, 1f);
             GlobalInformation.CardChoosen.Buttons.SetActive(false);
         }
@@ -46,7 +47,8 @@ public class Card : MonoBehaviour
     {
         layoutElement.ignoreLayout = false;
         Collider.enabled = true;
-        transform.localPosition = new Vector3(0f, 0f, 0f);
+        CardElement.transform.localPosition = new Vector3(0f, 0f, 0f);
+        transform.localPosition = new Vector3(0f, 0f, -0.09f);
         transform.localScale = new Vector3(1f, 1f, 1f);
         Buttons.SetActive(false);
         GlobalInformation.CardChoosen = null;
